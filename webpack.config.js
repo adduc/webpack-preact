@@ -1,5 +1,3 @@
-var path = require('path');
-
 module.exports = {
   mode: "production",
   entry: './main.js',
@@ -15,7 +13,10 @@ module.exports = {
         use: {
           loader: 'babel-loader',
           options: {
-            presets: ['es2015', 'react']
+            presets: ['es2015', 'react'],
+            plugins: [
+              ["transform-react-jsx", { "pragma":"h" }]
+            ]
           }
         }
       }

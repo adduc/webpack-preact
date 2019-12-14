@@ -13,9 +13,9 @@ module.exports = {
         use: {
           loader: 'babel-loader',
           options: {
-            presets: ['es2015', 'react'],
+            presets: ['@babel/react'],
             plugins: [
-              ["transform-react-jsx", { "pragma":"h" }]
+              ["@babel/transform-react-jsx", { "pragma":"h" }]
             ]
           }
         }

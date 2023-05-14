@@ -2,12 +2,16 @@
   "sideEffects": false,
   "license": "MIT",
   "devDependencies": {
-    "@babel/cli": "^7.7.5",
-    "@babel/core": "^7.7.5",
-    "@babel/preset-react": "^7.7.4",
-    "babel-loader": "^8.0.6",
-    "preact": "^10.1",
-    "webpack": "^4.41",
-    "webpack-cli": "^3.3"
+    "@babel/cli": "^7.21",
+    "@babel/core": "^7.21",
+    "@babel/preset-react": "^7.18",
+    "babel-loader": "^9.1",
+    "preact": "^10.14",
+    "webpack": "^5.82",
+    "webpack-cli": "^5.1"
+  },
+  "scripts": {
+    "build": "webpack --mode production",
+    "watch": "webpack --mode development --watch"
   }
 }
